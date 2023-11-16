@@ -6,7 +6,6 @@ const Jimp = require('jimp');
 const QrCodeReader = require('qrcode-reader');
 const fs = require('fs');
 const path = require('path');
-// Replace 'YOUR_BOT_TOKEN' with your actual bot token
 const token = process.env.botId;
 const bot = new TelegramBot(token, { polling: true });
 
@@ -49,14 +48,12 @@ function readQRCode(imagePath, callback) {
         return callback('Error reading image');
       }
   
-      // Read the image using Jimp
       Jimp.read(imageBuffer, (err, image) => {
         if (err) {
           console.error(err);
           return callback('Error processing image');
         }
   
-        // Convert the image to grayscale
         image.greyscale();
   
         // Use qrcode-reader to decode the QR code
