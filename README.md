@@ -1,0 +1,1 @@
+# telegram_qrcode_scanner
