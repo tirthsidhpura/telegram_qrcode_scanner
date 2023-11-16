@@ -1,0 +1,25 @@
+{
+  "name": "telegram_bot_qr_code_scanner",
+  "version": "1.0.0",
+  "description": "telegram bot to get image from the user and in backend scan that image and send data back to the user",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "telegram-bot",
+    "qrcode",
+    "qrcodescanner",
+    "scanner",
+    "telegram"
+  ],
+  "author": "tirth sidhpura",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "jimp": "^0.22.10",
+    "node-telegram-bot-api": "^0.64.0",
+    "path": "^0.12.7",
+    "qrcode-reader": "^1.0.4"
+  }
+}
